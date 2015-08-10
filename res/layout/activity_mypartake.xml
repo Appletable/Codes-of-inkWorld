@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_background" >
+
+        <RadioGroup
+            android:id="@+id/rg_first_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_first"
+                android:layout_width="61dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_shouxie"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="#ff27d9ff"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_follow"
+                android:layout_width="61dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_xuxie"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_fh" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_mylist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar"
+        ptr:ptrDrawable="@drawable/xixi" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

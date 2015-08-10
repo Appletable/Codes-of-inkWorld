@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true"><layer-list>
+
+            <!-- 第一层 -->
+            <item><shape>
+                    <solid android:color="#44000000" />
+
+                    <corners android:radius="2dip" />
+                </shape></item>
+            <!-- 第二层 -->
+            <item android:bottom="1dp" android:left="2dp"><shape>
+                    <solid android:color="#ffffff" />
+
+                    <corners android:radius="2dip" />
+                </shape></item>
+        </layer-list></item>
+
+</selector>

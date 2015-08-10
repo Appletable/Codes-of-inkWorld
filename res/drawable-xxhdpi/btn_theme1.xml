@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 设置边距 -->
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+
+    <!-- 控制边界线颜色和笔触大小 -->
+    <stroke
+        android:width="1dp"
+        android:color="#12d8e6" />
+
+    <gradient
+        android:angle="90"
+        android:endColor="#12d8e6"
+        android:startColor="#12d8e6"
+        android:type="linear" />
+    <!-- 控制圆角大小 -->
+    <corners android:radius="10dp" />
+
+</shape>

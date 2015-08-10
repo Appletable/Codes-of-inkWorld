@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这个是按下时的效果 -->
+    <item android:state_pressed="true"><shape>
+            <gradient android:endColor="#f5f5f5" android:startColor="#f5f5f5" />
+
+            <stroke android:width="1px" android:color="#a5a5a5" />
+
+            <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px" />
+        </shape></item>
+    <!-- 以下为正常状态的效果 -->
+    <item android:state_enabled="true"><shape>
+            <gradient android:endColor="#fff" android:startColor="#fff" />
+
+            <stroke android:width="1px" android:color="#a5a5a5" />
+
+            <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这个是按下时的效果 -->
+    <item android:state_pressed="true"><shape>
+            <gradient android:endColor="#ffffffff" android:startColor="#ffffffff" />
+        </shape></item>
+    <!-- 以下为正常状态的效果 -->
+    <item android:state_enabled="true"><shape>
+            <gradient android:endColor="#00ffffff" android:startColor="#00ffffff" />
+        </shape></item>
+
+</selector>
